@@ -1,51 +1,31 @@
 body{
-    background-image: url(../img/background.jpg);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 212, 176);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    object-fit: cover;
+    object-position: center;
 
 }
 
 .box-direita{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 50%;
     height: 100%;
     top: 0%;
     left: 50%;
     position: absolute;
-    box-sizing: border-box;
-
-    
-    
-    
+    box-sizing: border-box;  
 }
 
-.box-esquerda{
+
+
+.Cachorro{
     width: 40%;
-    padding-left: 10%;
-    padding-top: 10%;
-    top: 0%;
-    left: 0%;
+    padding-left: 8%;
+    padding-top: 10%;    
     position: absolute;
     box-sizing: border-box;
-
-}
-
-
-#conteiner-img{
-    width: 100vw;
-    position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-    
-
-}
-
-#conteiner-img img{
-    max-width: 50%;
-    max-height: 50%;
-}
-
-img {
-    width: 100%;
-    
-    
 }
