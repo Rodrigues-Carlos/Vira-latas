@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body{ /*Background cor creme*/
+    margin: 0;
+    padding: 0;
+    background-color: #fbd5b3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.Cachorro{ /* Animação do cachorro*/
+    width: 105%;
+    left: -105%;
+    top: 24%;   
+    position: absolute;
+}
+
+h1{
+    font-family: Secular One;
+    font-size: 170%;
+    width: 80%;
+    left: -82%;
+    top: 5%;
+    position: absolute;
+}
+
+h2{
+    font-family: Secular One;
+    font-size: 3vw;
+    left: 20vw;
+    top: 23%;
+    position: absolute;
+}
+
+.area-titulo{
+    height: 10%;
+}
+
+.Logo{ /*Logo Vira-latas*/
+    width: 50%;
+    left: 20%;
+    padding-left: 0%;
+    padding-top: 4%;
+    position: absolute;
+}
+
+.titulo{
+    height: 30%;
+}
+
+.Login {  /* Box branca de login*/
+    background-color: rgb(255, 245, 227);
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    position: absolute;
+}
+
+.Login input {
+    display: flex;
+    width: 90%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Login input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: #fbd5b3;
+    outline: none;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    
+}
+
+.Login input[type="password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: #fbd5b3;
+    outline: none;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    margin-top: 0%;
+}
+
+
+.area-subtitulo{
+    width: 90%;
+    height: 20%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+
+}
+
+.subtitulo{
+    font-size: 20px;
+    font-family: Arial;
+    text-decoration: none;
+    
+}
+
+.subtitulo:hover{
+    text-decoration:underline;
+}
+
+.area-botao{
+    width: 100%;
+    height: 10%;
+    
+}
+
+.botao{
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    border: solid 1px;
+    font-size: 30px;
+    margin-bottom: 3%;
+    margin-left: 5%;
+
+    
+
+}
+
+
+.botao:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.registrar{
+    font-size: 30px;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+
+.registrar:hover{
+    color: red;
+}
+
+
+
