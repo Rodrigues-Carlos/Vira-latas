@@ -13,26 +13,35 @@ body{ /*Background cor creme*/
 }
 
 .Cachorro{ /* Animação do cachorro*/
-    width: 100%;
+    width: 105%;
     left: -105%;
-    top: 25%;   
+    top: 24%;   
     position: absolute;
 }
 
 h1{
+    font-family: Secular One;
+    font-size: 170%;
     width: 80%;
-    left: -80%;
+    left: -82%;
     top: 5%;
+    position: absolute;
+}
+
+h2{
+    font-family: Secular One;
+    font-size: 3vw;
+    left: 20vw;
+    top: 23%;
     position: absolute;
 }
 
 .Logo{ /*Logo Vira-latas*/
     width: 50%;
+    left: 20%;
     padding-left: 0%;
     padding-top: 4%;
     position: absolute;
-    left: 25%;
-
 }
 
 .Login {  /* Box branca de login*/
@@ -52,7 +61,7 @@ h1{
     margin-right: auto;
 }
 
-.Login input[type="text"] {
+.Login input[type="email"] {
     border: none;
     border-bottom: 1px solid white;
     background: #fbd5b3;
