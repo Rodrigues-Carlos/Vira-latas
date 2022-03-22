@@ -104,14 +104,14 @@ h2{
 }
 
 .subtitulo{
-    font-size: 20px;
-    font-family: Arial;
+    font-size: 15px;
+    font-family: Secular One;
     text-decoration: none;
     
 }
 
 .subtitulo:hover{
-    text-decoration:underline;
+    color: #ff4d4d;
 }
 
 .area-botao{
@@ -121,34 +121,32 @@ h2{
 }
 
 .botao{
-    width: 200px;
-    height: 40px;
+    font-family: Secular One;
+    border-radius: 5px;
+    width: 155px;
+    height: 38px;
     align-items: center;
     border: solid 1px;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 3%;
     margin-left: 5%;
-
-    
-
 }
 
 
 .botao:hover{
-    background-color: red;
+    font-family: Secular One;
+    border-radius: 5px;
+    background-color: #ffaf38;
     cursor: pointer;
 }
 
 .registrar{
-    font-size: 30px;
-    font-family: Arial;
+    font-family: Secular One;
+    font-size: 15px;
     text-decoration: none;
 }
 
 
 .registrar:hover{
-    color: red;
+    color: #ff4d4d;
 }
-
-
-
