@@ -13,17 +13,17 @@ body{ /*Background cor creme*/
 }
 
 .Gato{ /* Animação do gato*/
-    height: 65%;
-    right: 95%;
-    top: 20%;   
+    height: 32vw;
+    right: 50vw;
+    top: 9vw;
     position: absolute;
 }
 
 h1{
     font-family: Secular One;
     font-size: 3vw;
-    left: 20vw;
-    top: 23%;
+    left: 18vw;
+    top: 11vw;
     position: absolute;
 }
 
