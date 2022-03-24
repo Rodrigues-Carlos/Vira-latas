@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body{ /*Background cor creme*/
+    margin: 0;
+    padding: 0;
+    background-color: #fbd5b3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.Gato{ /* Animação do gato*/
+    height: 32vw;
+    right: 50vw;
+    top: 9vw;
+    position: absolute;
+}
+
+h1{
+    font-family: Secular One;
+    font-size: 3vw;
+    left: 18vw;
+    top: 6vw;
+    position: absolute;
+}
+
+.Logo{ /*Logo Vira-latas*/
+    width: 40%;
+    left: 30%;
+    padding-left: 0%;
+    padding-top: 2%;
+    position: absolute;
+}
+
+.Cadastro {  /* Box branca de login*/
+    background-color: rgb(255, 245, 227);
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    position: absolute;
+}
+
+.Cadastro input {
+    display: flex;
+    width: 90%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Cadastro input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: #fbd5b3;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 15px;
+    margin-top: 24%;
+}
+
+.Cadastro input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: #fbd5b3;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 15px;
+    margin-top: 0%;
+}
+
+.Cadastro input[type="password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: #fbd5b3;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 15px;
+    margin-top: 0%;
+}
+
+
+.area-subtitulo{
+    width: 90%;
+    height: 5%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.area-botao{
+    width: 100%;
+    height: 10%;
+    
+}
+
+.botao{
+    font-family: Secular One;
+    border-radius: 5px;
+    width: 25%;
+    height: 60%;
+    align-items: center;
+    border: solid 1px;
+    font-size: 2vw;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+
+
+.botao:hover{
+    font-family: Secular One;
+    border-radius: 5px;
+    background-color: #ff8138;
+    cursor: pointer;
+}
+
+.logar{
+    font-family: Secular One;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+.logar:hover{
+    color: #ff4d4d;
+}
