@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Cadastro.css">
+    <script src="../js/js-cadastro2.js"></script>
+
+    <title>Tela de cadastro Vira-Latas</title>
+</head>
+<body>
+
+    <div class="Cadastro">
+        <a href="../Index.html"><img src="../img/Vira-Latas logo.png" class="Logo"></a>
+        
+        <h1>Cadastro</h1>
+        <img src="../img/Gato.gif" class="Gato">
+
+        <div class="formulario">
+            <form name="formuser">
+                <input type="email" id="emailID" name="email" placeholder="Insira seu e-mail" required>
+
+                <input type="text" id="CPF" name="cpf" placeholder="Insira seu CPF" required>
+
+                <input type="text" name="nome" placeholder="Insira seu nome" required>
+
+                <input type="tel" id="telID" name="telefone" placeholder="Insira seu telefone" required>
+
+                <input type="password" id="senhaID" name="senha" placeholder="confirme sua senha" required>
+            </form>
+        </div>
+
+        <div class="area-botao">
+            <button class="botao" type="submit" onclick="validando()"> CADASTRAR </button>
+        </div>
+        <div class="area-subtitulo">
+            <a class="logar" href="../paginas/Telalogin.html">Login</a>
+        </div>
+    </div>
+</body>
+</html>
