@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: Secular One;
+    background-color: #e7c5a5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.topo{
+    font-family: Secular One;
+    font-size: 3vw;
+}
+
+.Logo{
+    width: 12%;
+    left: 2%;
+    padding-top: 2vh;
+    position: absolute;
+}
+
+
+#menu-h{
+    max-width: 100%;
+    list-style-type: none;
+    padding: 15px;
+    text-align: center;
+    height: 5vh 5vw;
+    background-color: rgb(255, 245, 227);
+}
+
+#menu-h li{
+    display: inline; 
+}
+
+#menu-h li a{
+    font-size: 50%;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+#menu-h li a:hover{
+    color: #ff4d4d;
+}
+
+#menu-h li:nth-child(5) a{
+    float: right;
+    color: black;
+    background-color: #ffae51;
+    max-width: 20%;
+}
+
+#menu-h li:last-child a{
+    float: right;
+}
+
+
+.area-banner{ /* espaço determinado para o banner*/
+    width: 100%;
+    height: 350px;    
+}
+
+.area-img{ /* area que a imagem ocupa na div area-banner */
+    width: 85%;
+    height: 80%;
+    margin-top: 3%;
+    margin-left: 7%;
+    text-align: center;
+    align-items: center; 
+}
+
+
+.imagem{ /* preenche o espaço da div */
+    width: 100%;
+    height: 100%;
+}
+
+.area-botoes{ /* espaço determinado para os botoes */
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+.botao{ /* botoes do index */
+    width: 350px;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 4%;
+    border-radius: 5px;
+    background-color: #ffae51;
+    cursor: pointer;
+}
+
+.titulo-bicho{ /* titulo para a lista de cards */
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+/*Área do card do animal*/
+
+.area-bichos{ /* espaço determinado para os cards */
+    padding-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+   width: 90%;
+   height: 700px;
+   max-height: 1000%;
+   min-height: 700px;
+}
+
+.card-img{ /* imagem do animal no card */
+    width: 100%;
+    height: 210px;
+    border-radius: 4px;
+}
+
+.card-img:hover{
+    cursor: pointer;
+    opacity: 93%;
+}
+
+.card-bicho{ /* card dos animais */
+    width: 230px;
+    height: 280px;
+    border: solid 1px;
+    margin-right: 65px;
+    margin-top: 3%;
+    border-radius: 4px;
+    float: left;
+}
+
+.card-nome{ /* Nome no card */
+ height: 30px;
+ text-align: center;
+ margin-top: 6px;
+ border-bottom: solid 1px;
+}
+
+.card-endereco{ /* endereço no card */
+    text-align: center;
+}
+
+/*Rodapé com os contatos*/
+
+.area-contato{
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    height: 225px;
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Secular One;
+}
+
+
+
