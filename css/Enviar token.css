@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-body{ /*Background cor creme*/
+body{
     margin: 0;
     padding: 0;
     background-color: #fbd5b3;
@@ -12,7 +12,7 @@ body{ /*Background cor creme*/
 
 }
 
-.Rato{ /* Animação do cachorro*/
+.Calopsita{
     width: 100%;
     right: 100%;
     top: 24%;   
@@ -22,12 +22,13 @@ body{ /*Background cor creme*/
 h2{
     font-family: Secular One;
     font-size: 3vw;
-    left: 8vw;
+    right: 1vw;
     top: 11vw;
     position: absolute;
+    height: auto;
 }
 
-.Logo{ /*Logo Vira-latas*/
+.Logo{
     width: 50%;
     left: 20%;
     padding-left: 0%;
@@ -35,7 +36,7 @@ h2{
     position: absolute;
 }
 
-.recuperar {  /* Box branca de login*/
+.enviar {
     background-color: rgb(255, 245, 227);
     width: 50%;
     height: 100%;
@@ -44,7 +45,7 @@ h2{
     position: absolute;
 }
 
-.recuperar input {
+.enviar input {
     display: flex;
     width: 90%;
     margin-bottom: 3%;
@@ -52,7 +53,7 @@ h2{
     margin-right: auto;
 }
 
-.recuperar input[type="text"] {
+.enviar input[type="email"] {
     border: none;
     border-bottom: 1px solid white;
     background: #fbd5b3;
@@ -63,21 +64,9 @@ h2{
     margin-top: 20vw; 
 }
 
-.recuperar input[type="password"] {
-    border: none;
-    border-bottom: 1px solid white;
-    background: #fbd5b3;
-    outline: none;
-    height: 50px;
-    color: black;
-    font-size: 20px;
-    margin-top: 0%;
-}
-
 .area-botao{
     width: 100%;
-    height: 10%;
-    
+    height: 10%;   
 }
 
 .botao{
