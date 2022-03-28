@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Enviar token.css">
+    <script src="../js/Enviar token.js"></script>
 
     <title>Tela enviar e-mail Vira-Latas</title>
 </head>
@@ -16,13 +17,13 @@
 
         <div class="formulario">
             <form>
-                <input type="email" name="" placeholder="Insira seu e-mail" required>
+                <input type="email" id="emailID" name="" placeholder="Insira seu e-mail" required>
                 
             </form>
         </div>
 
         <div class="area-botao">
-            <button class="botao">Confirmar</button>
+            <button class="botao" onclick="validando()">Confirmar</button>
         </div>
     </div>
 </body>
