@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/recuperar senha.css">
+    <script src="../js/Recuperar senha.js"></script>
 
     <title>Tela recuperar senha Vira-Latas</title>
 </head>
@@ -11,22 +12,22 @@
 
     <div class="recuperar">
             <a href="../Index.html"><img src="../img/Vira-Latas logo.png" class="Logo"></a>
-            <h2>Recadastre sua senha</h2>
+            <h2>Cadastre sua nova senha</h2>
         <img src="../img/Hamster.gif" class="Rato">
 
         <div class="formulario">
             <form>
                 <input type="text" name="" placeholder="Insira token enviado no seu email" required>
 
-                <input type="password" id="senha" name="" placeholder="Insira sua nova senha" required>
+                <input type="password" id="senhaID" name="" placeholder="Insira sua nova senha" required>
 
-                <input type="password" id="senha" name="" placeholder="Insira sua nova senha novamente" required>
+                <input type="password" id="senhaID" name="" placeholder="Insira sua nova senha novamente" required>
                 
             </form>
         </div>
 
         <div class="area-botao">
-            <button class="botao">Confirmar</button>
+            <button class="botao" onclick="validando()">Confirmar</button>
         </div>
     </div>
 </body>
