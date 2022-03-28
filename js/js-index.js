@@ -1,6 +1,6 @@
-var array_bichos = [['BOB.jpg', 'BOB', 'R. tonno - 430', false, 0], ['Bolha.jpg', 'Bolha', 'Rua padre durval',false, 1],
-['Maia.jpg', 'Maia', 'Rua das dores',false, 2], ['Mel.jpg', 'Mel', 'Rua imaculado',false, 3], ['Nestor.jpg', 'Nestor', 'Bairro das cove',false, 4],
-['Sebastiao.jpeg', 'Sebastião', 'Bairro Rio verde',false, 5], ['Vilma.jpg', 'Vilma', 'bairro do cu',false, 6], ['Laila.jpg', 'Laia', 'Rua dolores',false, 7]];
+var array_bichos = [['BOB.jpg', 'BOB', 'Bairro da banuina', false, 0], ['Bolha.jpg', 'Bolha', 'Bairro Rio verde',false, 1],
+['Maia.jpg', 'Maia', 'Bairro Rio verde',false, 2], ['Mel.jpg', 'Mel', 'Bairro Rio verde',false, 3], ['Nestor.jpg', 'Nestor', 'Bairro Rio verde',false, 4],
+['Sebastião.jpg', 'Sebastião', 'Bairro Rio verde',false, 5], ['Vilma.jpg', 'Vilma', 'Bairro da banuina',false, 6], ['Laila.jpg', 'Laila', 'Bairro da banuina',false, 7]];
 
 var carrinho = [];
 
