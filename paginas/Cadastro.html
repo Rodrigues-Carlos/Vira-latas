@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Cadastro.css">
     <script src="../js/js-cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
 
     <title>Tela de cadastro Vira-Latas</title>
 </head>
@@ -18,13 +19,13 @@
 
         <div class="formulario">
             <form name="formuser">
-                <input type="email" id="emailID" name="email" placeholder="Insira seu e-mail" required>
+                <input type="email" id="emailID" name="email" autocomplete="off" placeholder="Insira seu e-mail" required>
 
-                <input type="text" id="CPF" name="cpf" placeholder="Insira seu CPF" required>
+                <input type="text" id="CPF" name="cpf" placeholder="Insira seu CPF" autocomplete="off" maxlength="14" required>
 
                 <input type="text" name="nome" placeholder="Insira seu nome" required>
 
-                <input type="tel" id="telID" name="telefone" placeholder="Insira seu telefone" required>
+                <input type="tel" id="telID" name="telefone" autocomplete="off" placeholder="Insira seu telefone" required>
 
                 <input type="password" id="senhaID" name="senha" placeholder="Insira sua senha" required>
 
@@ -39,5 +40,20 @@
             <a class="logar" href="../paginas/Telalogin.html">Login</a>
         </div>
     </div>
+
+  <script>
+    new Cleave('#CPF', {
+      blocks: [3, 3, 3, 2],
+      delimiters: ['.', '.', '-'],
+      numericOnly: true
+    });
+
+    new Cleave('#telID', {
+      blocks: [0, 2, 5, 4],
+      delimiters: ['(', ')', '-'],
+      numericOnly: true
+    });
+  </script>
+
 </body>
 </html>
