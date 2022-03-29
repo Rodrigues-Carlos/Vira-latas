@@ -1,59 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pr-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Cadastro.css">
-    <script src="../js/js-cadastro.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
 
-    <title>Tela de cadastro Vira-Latas</title>
+    <title>Vira-Latas</title>
+    <script src="js/js-index.js"></script>
+
 </head>
-<body>
 
-    <div class="Cadastro">
-        <a href="../Index.html"><img src="../img/Vira-Latas logo.png" class="Logo"></a>
-        
-        <h1>Cadastro</h1>
-        <img src="../img/Gato.gif" class="Gato">
-
-        <div class="formulario">
-            <form name="formuser">
-                <input type="email" id="emailID" name="email" autocomplete="off" placeholder="Insira seu e-mail" required>
-
-                <input type="text" id="CPF" name="cpf" placeholder="Insira seu CPF" autocomplete="off" maxlength="14" required>
-
-                <input type="text" name="nome" placeholder="Insira seu nome" required>
-
-                <input type="tel" id="telID" name="telefone" autocomplete="off" placeholder="Insira seu telefone" required>
-
-                <input type="password" id="senhaID" name="senha" placeholder="Insira sua senha" required>
-
-                <input type="password" id="senhaID" name="senha" placeholder="Confirme sua senha" required>
-            </form>
-        </div>
-
-        <div class="area-botao">
-            <button class="botao" onclick="validando()"> Cadastrar </button>
-        </div>
-        <div class="area-subtitulo">
-            <a class="logar" href="../paginas/Telalogin.html">Login</a>
+<body class="body">
+    <div class="topo">
+        <img src="img/Vira-Latas logo.png" class="Logo">
+        <div class="menu" id="menu-h">
+            <li><a href="">Quero adotar</a></li>
+            <li><a href="">Doação</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="paginas/Cadastro.html">Cadastre-se</a></li>
+            <li><a href="paginas/Telalogin.html">Login</a></li>
         </div>
     </div>
 
-  <script>
-    new Cleave('#CPF', {
-      blocks: [3, 3, 3, 2],
-      delimiters: ['.', '.', '-'],
-      numericOnly: true
-    });
+    <div class="area-banner">
+        <div class="area-img">
+                <img class="imagem" src="img/Banner viralatas.png">
+        </div>
+    </div>
 
-    new Cleave('#telID', {
-      blocks: [0, 2, 5, 4],
-      delimiters: ['(', ')', '-'],
-      numericOnly: true
-    });
-  </script>
+    <div class="area-botoes">
+        <button class="botao"> ADOTAR</button>
+        <Button class="botao"> DOAR</Button>
+    </div>
+
+    <div class="titulo-bicho">
+        <h2> Animais para adoção</h2>
+    </div>
+
+    <div class="area-bichos" id="bichos">    
+    </div>
+
+    <div class="area-contato">
+        <li>Contatos</li>
+        <br>
+        <li>Email: Viralatas@gmail.com</li>
+        <br>
+        <li>Telefone/PIX: 4002 - 8922</li>
+        <br>
+        <li> R. Imac. Conceição, 1155 - Prado Velho, Curitiba - PR </li>
+    </div>
 
 </body>
+
 </html>
