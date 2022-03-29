@@ -1,144 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-body{ /*Background cor creme*/
+.body{
     margin: 0;
     padding: 0;
-    background-color: #fbd5b3;
+    font-family: Secular One;
+    background-color: #e7c5a5;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;   
-    object-fit: cover;
-    object-position: center;
-
+    background-attachment: fixed;
 }
 
-.Gato{ /* Animação do gato*/
-    height: 32vw;
-    right: 50vw;
-    top: 9vw;
-    position: absolute;
-}
-
-h1{
+.topo{
     font-family: Secular One;
     font-size: 3vw;
-    left: 18vw;
-    top: 6vw;
+}
+
+.Logo{
+    width: 12%;
+    left: 2%;
+    padding-top: 2vh;
     position: absolute;
 }
 
-.Logo{ /*Logo Vira-latas*/
-    width: 40%;
-    left: 30%;
-    padding-left: 0%;
-    padding-top: 2%;
-    position: absolute;
+.slogan{
+    text-align: center;
 }
 
-.Cadastro {  /* Box branca de login*/
+#menu-h{
+    max-width: 100%;
+    list-style-type: none;
+    padding: 15px;
+    text-align: center;
+    height: 5vh 5vw;
     background-color: rgb(255, 245, 227);
-    width: 50%;
-    height: 100%;
-    top: 0%;
-    left: 50%;
-    position: absolute;
 }
 
-.Cadastro input {
-    display: flex;
-    width: 90%;
-    margin-bottom: 3%;
-    margin-left: auto;
-    margin-right: auto;
+#menu-h li{
+    display: inline; 
 }
 
-.Cadastro input[type="email"] {
-    border: none;
-    border-bottom: 1px solid white;
-    background: #fbd5b3;
-    outline: none;
-    height: 40px;
+#menu-h li a{
+    font-size: 50%;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
     color: black;
-    font-size: 15px;
-    margin-top: 24%;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 10px;
 }
 
-.Cadastro input[type="text"] {
-    border: none;
-    border-bottom: 1px solid white;
-    background: #fbd5b3;
-    outline: none;
-    height: 40px;
+#menu-h li a:hover{
+    color: #ff4d4d;
+}
+
+#menu-h li:nth-child(5) a{
+    float: right;
     color: black;
-    font-size: 15px;
-    margin-top: 0%;
+    background-color: #ffae51;
+    max-width: 20%;
 }
 
-.Cadastro input[type="tel"] {
-    border: none;
-    border-bottom: 1px solid white;
-    background: #fbd5b3;
-    outline: none;
-    height: 40px;
-    color: black;
-    font-size: 15px;
-    margin-top: 0%;
+#menu-h li:last-child a{
+    float: right;
 }
 
-.Cadastro input[type="password"] {
-    border: none;
-    border-bottom: 1px solid white;
-    background: #fbd5b3;
-    outline: none;
-    height: 40px;
-    color: black;
-    font-size: 15px;
-    margin-top: 0%;
+.area-img{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+    align-items: center;
 }
 
-
-.area-subtitulo{
-    width: 90%;
-    height: 5%;
-    margin-bottom: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-
-.area-botao{
+/* imagem dos animais */
+.imagem{
     width: 100%;
-    height: 10%;
-    
+    height: 100%;
+}
+
+.area-botoes{
+    width: 100%;
+    height: 80px;
+    text-align: center;
 }
 
 .botao{
-    font-family: Secular One;
-    border-radius: 5px;
-    width: 25%;
-    height: 60%;
-    align-items: center;
-    border: solid 1px;
-    font-size: 2vw;
-    margin-bottom: 3%;
+    width: 350px;
+    height: 50px;
     margin-left: 5%;
-}
-
-
-.botao:hover{
-    font-family: Secular One;
+    margin-right: 4%;
     border-radius: 5px;
-    background-color: #ff8138;
+    background-color: #ffae51;
     cursor: pointer;
 }
 
-.logar{
-    font-family: Secular One;
-    font-size: 15px;
-    text-decoration: none;
+.area-bichos{
+    padding-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 90%;
+    height: 700px;
+    max-height: 1000%;
+    min-height: 700px;
 }
 
+.card-img{
+    width: 100%;
+    height: 210px;
+    border-radius: 4px;
 
-.logar:hover{
-    color: #ff4d4d;
+}
+
+.card-bicho{
+    width: 230px;
+    height: 280px;
+    border: solid 1px;
+    margin-right: 65px;
+    margin-top: 3%;
+    border-radius: 4px;
+    float: left;
+    background-color: white;
+}
+
+.card-nome{
+ height: 30px;
+ text-align: center;
+ margin-top: 6px;
+}
+
+.card-endereco{
+    text-align: center;
+}
+
+.area-contato{
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    height: 25vh;
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Secular One;
 }
