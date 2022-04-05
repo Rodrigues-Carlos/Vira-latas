@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-body{ /*Background cor creme*/
+body{
     margin: 0;
     padding: 0;
     background-color: #fbd5b3;
@@ -12,7 +12,7 @@ body{ /*Background cor creme*/
 
 }
 
-.Cachorro{ /* Animação do cachorro*/
+.Cachorro{
     width: 105%;
     left: -105%;
     top: 24%;   
@@ -27,7 +27,7 @@ h2{
     position: absolute;
 }
 
-.Logo{ /*Logo Vira-latas*/
+.Logo{
     width: 50%;
     left: 20%;
     padding-left: 0%;
@@ -35,7 +35,7 @@ h2{
     position: absolute;
 }
 
-.Login {  /* Box branca de login*/
+.Login {
     background-color: rgb(255, 245, 227);
     width: 50%;
     height: 100%;
