@@ -20,7 +20,7 @@ function validando(){
         return false;
     }
     else if(!regexSenha.test(valueSENHA)) {
-        alert("SENHA Invalida");
+        alert("Insira uma senha com letras maiúsculas e minúsculas, números e carácter especial.");
         return false;
     }
     else if(!regexTel.test(valueTel)) {
@@ -28,6 +28,5 @@ function validando(){
         return false;
     }
     return true;
-
 
 }
