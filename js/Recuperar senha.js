@@ -9,5 +9,4 @@ function validando(){
     }
     
     return true;
-
 }
