@@ -41,6 +41,11 @@ h1 {
     box-shadow: #a54200 4px 4px 0px;
     border-radius: 8px;
     transition: transform 200ms, box-shadow 200ms;
+    cursor: pointer;
+}
+
+.botão:hover{
+    background-color: #f38200;
 }
 
 .botão:active {
