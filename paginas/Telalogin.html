@@ -6,17 +6,9 @@
     <link rel="stylesheet" href="../css/login.css">
     <script src="../js/login.js"></script>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
-      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="../js/crypto-js.min.js"></script>
     <title>Tela de login Vira-Latas</title>
 </head>
 <body>
@@ -28,14 +20,17 @@
 
         <div class="formulario" >
             <form id="form">
+                <input type="hidden" id="senhaHash" name="senhaHash">
                 <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
 
-                <input type="password" id="password" name="password" placeholder="Insira sua senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required>
                
                   <button type="button" class="botao" onclick="acessar()"> entrar</button>
             </form>
         </div>
-
+        <div id="teste">
+            
+        </div>
         
         <div class="area-subtitulo">
             <a class="subtitulo" href="../paginas/Enviar token.html"> Esqueci minha senha</a>
