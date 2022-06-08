@@ -1,14 +1,12 @@
 <?php
+   include "geracod.php";
 
-include 'geracod.php';
-require 'geracod.php';
-    $codigo = $_POST["codigo"];
+   $recebeCod = $_POST["codigo"];
 
-    if($codigo == $token ){
-        header('Location:../paginas/Sobre.html');
-    }
-    else{
-        echo("Codigo invalido");
-    }
+   if($recebeCod == $token){
+       echo json_encode("Success");
+   } else{
+       echo json_encode("Codigo invalido");
+   }
 
 ?>

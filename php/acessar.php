@@ -1,38 +1,23 @@
 <?php
+include "conexaoBD.php";
 
-  include 'geracod.php';
-    $usuario = $_POST["email"];
-    $senha = $_POST["password"];
 
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-    require 'PHPMailer-master/src/Exception.php';
-    require 'PHPMailer-master/src/PHPMailer.php';
-    require 'PHPMailer-master/src/SMTP.php';
-    $mail = new PHPMailer(true);
-  try{
-    // Configuração
-    $mail->IsSMTP();
-    $mail->Mailer = "smtp";
-    $mail->IsSMTP(); 
-    $mail->CharSet = 'UTF-8';   
-    $mail->SMTPDebug = 0;
-    $mail->SMTPAuth = true;     
-    $mail->SMTPSecure = 'ssl'; 
-    $mail->Host = 'smtp.gmail.com'; 
-    $mail->Port = 465;
-    // Detalhes do envio de E-mail
-    $mail->Username = 'viralatasite'; 
-    $mail->Password = 'Auaumiau';
-    $mail->SetFrom('viralatasite@gmail.com', 'Vira latas');
-    $mail->addAddress($usuario,'');
-    $mail->Subject = "Confirmacao em duas etapas ";
-    $mail->msgHTML("Codigo para acesso ao site:".$token);
-    $mail->send();
-  }catch (Exception $e) {
+$email = $_POST["email"];
+$senha = $_POST["senhaHash"];
+$sql_code = mysqli_query($conexao, "SELECT * FROM DB_ViraLata.TB_Users WHERE user_email='$email' AND user_password='$senha'");
 
-    # Caso ocorra algum problema o script cairá aqui
-    echo "O e-mail não pode ser enviado: {$mail->ErrorInfo}";
+
+
+if(mysqli_num_rows($sql_code)<=0){
+  echo json_encode("Login Ou senha incorreto");
+
 }
+else{
+  echo json_encode("Success");
+}
+
+  
+
+   
 
 ?>
