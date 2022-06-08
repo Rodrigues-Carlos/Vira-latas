@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    background-color: #ffddbf;
+}
+.card {
+    width: 80vw;
+    height: 90vh;
+    border: 2px solid #582e0a;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #ffc28cbb;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.Logo-img{
+    width: 15vw;
+    text-align: center;
+    padding-top: 2vh;
+    left: 2px;
+}
+
+h1 {
+    font-family: Secular One;
+    margin-top: 1%;
+    margin-bottom: 10vw;
+    font-size: 200%;
+    text-align: center;
+}
+
+.botão {
+    font-family: Secular One;
+    font-size: 3vh;
+    margin: 0 auto;
+    width: 30vh;
+    height: 7vw;
+    background-color: #ff8800;
+    box-shadow: #a54200 4px 4px 0px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.botão:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #a54200 0px 0px 0px;
+}
