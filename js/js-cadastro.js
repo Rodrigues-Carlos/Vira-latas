@@ -1,4 +1,4 @@
-function validando(){
+/*function validando(){
     let value = document.getElementById("emailID").value;
     let valueCPF = document.getElementById("CPF").value;
     let valueTel = document.getElementById("telID").value;
@@ -29,4 +29,29 @@ function validando(){
     }
     return true;
 
-}
+
+
+  
+
+}*/
+
+    
+
+
+function register() {
+  var hash = CryptoJS.SHA256($("#senha").val());
+  $("#senhaHash").val(hash);
+  var dados = $("#formcad").serialize();
+  
+    $.ajax({
+      type: "POST",
+      url: "../php/conexaoBD.php",
+      data: dados, hash,
+      success: function(retorno) {
+          window.location.href = "../paginas/Telalogin.html";
+
+      }
+
+    });
+    
+  }
