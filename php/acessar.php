@@ -1,4 +1,6 @@
 <?php
+
+  include 'geracod.php';
     $usuario = $_POST["email"];
     $senha = $_POST["password"];
 
@@ -25,7 +27,6 @@
     $mail->SetFrom('viralatasite@gmail.com', 'Vira latas');
     $mail->addAddress($usuario,'');
     $mail->Subject = "Confirmacao em duas etapas ";
-    $token = random_int(10000, 99999);
     $mail->msgHTML("Codigo para acesso ao site:".$token);
     $mail->send();
   }catch (Exception $e) {
