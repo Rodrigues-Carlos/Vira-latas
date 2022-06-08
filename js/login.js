@@ -1,16 +1,38 @@
 function acessar() {
+  var hash = CryptoJS.SHA256($("#senha").val());
+  $("#senhaHash").val(hash);
   var dados = $("#form").serialize();
+  document.getElementById("teste").innerHTML = "";
+
+  $.ajax({
+    dataType: "json",
+    type: "POST",
+    url: "../php/acessar.php",
+    data: dados, hash,
+    async: true,
+    success: function (retorno){
+      if(retorno == "Success"){
+        location.href = "../paginas/2-FA.html";
+
+      }else{
+        document.getElementById("teste").innerHTML = "<div id='teste' class='teste'>Incorrect email or password.</div>";
+      }
+    }
+  });
 
   $.ajax({
     type: "POST",
-    data: dados,
-    url: "../php/acessar.php",
-    success: function(retorno){
-      window.location.href = "../paginas/Enviar token.html";
-    },
-    error: function(){
-      alert("Ocorreu um erro");
-    }
-  });
+    url: "../php/envia-email.php",
+    data: dados, hash,
+    async: true
+    });
+
+
+
+ 
+
+
+
+  
   
 }

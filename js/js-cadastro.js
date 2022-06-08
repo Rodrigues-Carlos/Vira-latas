@@ -45,7 +45,7 @@ function register() {
   
     $.ajax({
       type: "POST",
-      url: "../php/conexaoBD.php",
+      url: "../php/insert.php",
       data: dados, hash,
       success: function(retorno) {
           window.location.href = "../paginas/Confirmacao.html";
