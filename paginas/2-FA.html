@@ -1,11 +1,14 @@
+
+
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/2-FA.css">
     <script src="../js/2-FA.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>2 fatores</title>
 </head>
 <body>
@@ -14,18 +17,21 @@
             <a href="../Index.html"><img src="../img/Vira-Latas logo.png" class="Logo"></a>
             <h2>Digite o codigo 2-FA</h2>
         <img src="../img/2Dogs.gif" class="Cachorro">
+        <div id="legenda">
+            
+        </div>
 
         <div class="formulario">
-            <form>
-                <input type="text" id="codigo" name="" placeholder="Insira o código" required>
+            <form id="recebe-cod">
+                <input type="text" id="codigo" name="codigo" placeholder="Insira o código" required>
+               
+                <button type="button" class="botao" onclick="confirm()"> entrar</button>
                 
             </form>
         </div>
 
-        <div class="area-botao">
-            <button class="botao" onclick="validando()">Confirmar</button>
-        </div>
     </div>
     
 </body>
+
 </html>
