@@ -48,7 +48,7 @@ function register() {
       url: "../php/conexaoBD.php",
       data: dados, hash,
       success: function(retorno) {
-          window.location.href = "../paginas/Telalogin.html";
+          window.location.href = "../paginas/Confirmacao.html";
 
       }
 
