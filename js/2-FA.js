@@ -13,20 +13,22 @@
     return true;
 }*/
 
-function confirm() {
-  document.getElementById("legenda").innerHTML = "";
-  var dados = $("#recebe-cod").serialize();
 
+
+function confirm() {
+  
+  var dados = $("#recebe-cod").serialize();
+  document.getElementById("legenda").innerHTML = "";
   $.ajax({
     dataType: "json",
     type: "POST",
     url: "../php/confirma-codigo.php",
     data: dados,
-    success: function(retorno){
+    success: function (retorno){
       if(retorno == "Success"){
-        location.href = "../paginas/Doacoes.html";
-      } else if(retorno == "Codigo invalido"){
-        document.getElementById("legenda").innerHTML = "<div class = 'legenda'> CODIGO INVALIDO</div>";
+        location.href = "../php/confidencial.php";
+      }else{
+        document.getElementById("legenda").innerHTML = "<div id='legenda'> CODIGO INVALIDO </div>"
       }
     }
   });
