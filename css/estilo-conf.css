@@ -99,13 +99,22 @@
 }
 
 .area-bichos{
+    align-items: center;
     padding-top: 3%;
-    margin-left: 7%;
-    margin-right: 7%;
-    width: 90%;
-    height: 700px;
-    max-height: 1000px;
+    width: 100%;
+    display: flex;
+
     
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+    height: 800px;
+    max-height: 10000px;
+   
+   
+   
 }
 
 .card-img{
@@ -117,13 +126,43 @@
 
 .card-bicho{
     width: 230px;
-    height: 280px;
+    height: 320px;
     border: solid 1px;
     margin-right: 65px;
     margin-top: 3%;
     border-radius: 4px;
     float: left;
     background-color: white;
+    
+}
+
+.adocao{
+    background-color: green;
+    text-align: center;
+    width: 150px;
+    position: relative;
+
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    color:beige;
+}
+
+.adocao:hover{
+    background-color: rgb(15, 155, 15);
+    cursor: pointer;
+}
+
+.adocao2{
+    background-color: rgb(10, 44, 19);
+    text-align: center;
+    width: 150px;
+    position: relative;
+
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    color:beige;
 }
 
 .card-nome{
