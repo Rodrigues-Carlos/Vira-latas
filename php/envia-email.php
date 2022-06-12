@@ -1,6 +1,9 @@
 <?php
+session_start();
 include "acessar.php";
-include "geracod.php"
+
+include "corpo-email.php";
+
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -26,7 +29,7 @@ try{
  $mail->SetFrom('viralatasite@gmail.com', 'Vira latas');
  $mail->addAddress($email,'');
  $mail->Subject = "Confirmacao em duas etapas ";
- $mail->msgHTML("Codigo para acesso ao site:".$token);
+ $mail->msgHTML($body);
  
  $mail->send();
 }catch (Exception $e) {
