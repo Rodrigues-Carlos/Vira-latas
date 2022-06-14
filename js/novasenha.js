@@ -10,11 +10,11 @@ function mudar(){
         data: dado, hash,
         success: function(retorno){
             if(retorno == "Invalid Password"){
-                document.getElementById("teste").innerHTML = "<div id='teste' class='teste'>Incorrect password.</div>";
+                document.getElementById("teste").innerHTML = "<div id='teste' class='teste'>Senha incorreta.</div>";
             }else if(retorno == "Success"){
-                document.getElementById("teste").innerHTML = "<div id='teste' class='teste'>email invalid.</div>";
+                document.getElementById("teste").innerHTML = "<div id='teste' class='teste'>Senha alterada.</div>";
             }else{
-                document.getElementById("teste").innerHTML = "<div id='teste' class='teste'>PORRA.</div>";
+                document.getElementById("teste").innerHTML = "<div id='teste' class='teste'>div>";
             }
         }
     })
