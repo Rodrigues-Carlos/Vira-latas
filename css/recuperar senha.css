@@ -62,6 +62,9 @@ h2{
     font-size: 20px;
     margin-top: 20vw; 
 }
+.formulario{
+    margin-top: 40%;
+}
 
 .recuperar input[type="password"] {
     border: none;

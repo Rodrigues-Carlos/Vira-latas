@@ -38,17 +38,33 @@
     
 
 
+
 function register() {
   var hash = CryptoJS.SHA256($("#senha").val());
   $("#senhaHash").val(hash);
-  var dados = $("#formcad").serialize();
+  const dados = {
+    nome: $('#nome').val(),
+    cpf: $('#cpf').val(),
+    tel: $('#tel').val(),
+    email: $('#email').val(),
+    senhaHash: $('#senhaHash').val()
+  };
   
+  const encryptedData = encrypt(JSON.stringify(dados))
     $.ajax({
+      dataType: "JSON",
       type: "POST",
       url: "../php/insert.php",
-      data: dados, hash,
+      data:{
+        message: encryptedData,
+      },
       success: function(retorno) {
+        if(retorno == "Success"){
           window.location.href = "../paginas/Confirmacao.html";
+        }else{
+          window.location.href = "../paginas/Confirmacao.html";
+        }
+          
 
       }
 
