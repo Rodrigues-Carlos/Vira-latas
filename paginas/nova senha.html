@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/recuperar senha.css">
+    <script src="../js/novasenha.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <title>Tela recuperar senha Vira-Latas</title>
+</head>
+<body>
+
+    <div class="recuperar">
+            <a href="../Index.html"><img src="../img/Vira-Latas logo.png" class="Logo"></a>
+            <h2>Cadastre sua nova senha</h2>
+        <img src="../img/Hamster.gif" class="Rato">
+
+        <div class="formulario">
+            <form id="form-email2">
+                <input type="hidden" id="senhaHash" name="senhaHash">
+
+                <input type="password" id="senha" name="senha" placeholder="Insira sua nova senha" required>
+
+                <input type="password" id="senhaID" name="senhaID" placeholder="Insira sua nova senha novamente" required>
+                <div class="area-botao">
+                    <button type="button" class="botao" onclick="mudar()">Confirmar</button>
+                </div>
+            </form>
+        </div>
+        <div id="teste">
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>

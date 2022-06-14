@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Enviar token.css">
+    <script src="../js/Recuperar senha.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <title>Tela enviar e-mail Vira-Latas</title>
+</head>
+<body>
+
+    <div class="enviar">
+            <a href="../Index.html"><img src="../img/Vira-Latas logo.png" class="Logo"></a>
+            <h2>Digite seu e-mail de recuperação</h2>
+        <img src="../img/Calopsita.gif" class="Calopsita">
+
+        <div class="formulario" >
+            <form id="form-email">
+                <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
+                <div class="area-botao">
+                    <button type="button" class="botao" onclick="recuperar()">Confirmar</button>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
